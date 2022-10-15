@@ -1,0 +1,1133 @@
+*, .suimg{
+ margin: 0;
+ padding: 0;
+ border: 0;
+ outline: 0;
+ vertical-align: baseline;
+}
+
+.himg, .suimg, .siimg, .mainimage{
+  width:104vw;
+  height:106vh;
+  z-index:300;
+  position: relative;
+  filter: opacity(0.7);
+  filter: brightness(70%);
+ padding: 0%;
+ right: 2%;
+
+}
+.back{
+  color: red;
+  position: relative;
+  bottom: 10%;
+  margin-top: 5%;
+  left: 5%;
+}
+.navcont{
+  display: flex;
+  color: whitesmoke;
+  float: right;
+  position: absolute;
+  z-index: 500;
+  top: 0%;
+  left: 60%;
+}
+.navcont>p{
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.mobilenavcont{
+  display: none;
+}
+.signuph, .signinh , .facts{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.homeintro{
+  position: absolute;
+  z-index: 300;
+  bottom: 40%;
+  margin-top: 0%;
+  left: 10%;
+  text-align: center;
+}
+.dits{
+  width: 50%;
+padding-left: 25%;
+
+color: white;
+font-size: 1rem;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.explore{
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 2%;
+}
+
+.mobilenavcontainer{
+  position: fixed;
+  background-color:black;
+  left: 0rem;
+  top: 30px;
+  opacity: 0.5;
+  z-index: 700;
+  width: 90vw;
+  height: 100vh;
+  display: block;
+}
+.mobilenavcontainer>p{
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 2rem;
+  z-index: 500;
+}
+.disccover{
+  position: relative;
+  left: 43%;
+}
+.signupp{
+  position: relative;
+  left: 40%;
+}
+.signup{
+  font-size: 1.2rem;
+  background-color: black;
+  width: fit-content;
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+  cursor: pointer;
+}
+.disc{
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  margin-top: 2%;
+  width: fit-content;
+  cursor: pointer;
+}
+.form{
+  position: absolute;
+  top: 10vh;
+  left: 33vw;
+  width: 35vw;
+  height: auto;
+  background-image: url('Pages/sky2.JPG');
+  z-index: 500;
+  display: block;
+  padding-bottom: 5%;
+}
+.form>h2{
+  color: black;
+  padding-left: 27%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.form>input{
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: relative;
+  left: 20%;
+}
+.suimg{
+  position: relative;
+  bottom: 10%;
+}
+.signinform{
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 33%;
+  height: auto;
+ background-color: white;
+  z-index: 500;
+  padding-bottom: 20%;
+}
+.signinform>h2{
+  text-align: center;
+  color: rgb(13, 20, 2);
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+.signinform>input{
+  position: relative;
+  left: 23%;
+  border: 1px solid black;
+}
+.siemail, .sipassword{
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  
+}
+.sign{
+  position: relative;
+  left: 22%;
+  margin-bottom: 5%;
+}
+.signin{
+  width: 57%;
+  padding: 6.5px;
+  font-size: 1rem;
+  background-color: red;
+  text-align: center;
+  color: white;
+
+}
+.lil{
+  display: flex;
+  color: grey;
+  position: relative;
+  left: 20%;
+  font-size: 1rem;
+}
+.lil1{
+  color: grey;
+  position: relative;
+  left: 20%;
+  font-size: 1rem;
+  width: 60%;
+
+}
+.forgot{
+  margin-left: 10%;
+  margin-top: 0rem;
+  margin-bottom: 5%;
+}
+.search{
+  display: flex;
+ position: relative;
+ left: 10%;
+ margin-bottom: 7.5%;
+}
+.sinput{
+  width: 100%;
+  height: 3.5vh;
+  margin-top: 0%;
+  padding: 3px;
+}
+.part1{
+  z-index: 300;
+
+  position: absolute;
+  top: 5%;
+}
+.submit{
+  width: fit-content;
+  padding: 1px;
+  background-color: red;
+  color: white;
+  
+}
+.tnd, .location, .cond, .icon{
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.cond{
+  margin-bottom: 20%;
+}
+.humidity, .winddir{
+  margin-left: 10%;
+}
+.dc1, .dc2{
+  display: flex;
+  padding-left: 20%;
+  color: white;
+}
+.dc2{
+ margin-top: 20%;
+}
+.wind, .cloud, .winddir{
+  color: white;
+}
+.parts{
+  display: flex;
+
+}
+.part2{
+  z-index: 500;
+  position: absolute;
+  top: 2%;
+  left: 25vw;
+  width:75vw;
+  color: black;
+  height: auto;
+  padding-bottom: 40vh;
+ background-image: radial-gradient( black, grey);
+}
+.sidemenu{
+  position: absolute;
+  background-color: black;
+  left: 0rem;
+  top: 20px;
+  z-index: 500;
+  width: 50vw;
+  height: 100vh;
+}
+.sidemenu>p{
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  z-index: 500;
+}
+.daycont{
+  display: flex;
+ flex-direction: row;
+}
+.daycont{
+  display: block;
+
+}
+.first, .second{
+  display: flex;
+
+}
+.d1{
+  flex: 1;
+  margin-left: 0rem;
+}
+.day{
+  flex: 0.5;
+  margin-left: 0.3rem;
+  margin-bottom: 1rem;
+  color: black;
+  background-color: white;
+  border-radius: 5px ;
+  /* box-shadow: 4px 5px 3px red; */
+}
+.hourcont, .hourcont2{
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.hour{
+  width: 15%;
+  background-color: orangered;
+  padding: 25px;
+ margin-left: 0.3rem;
+}
+.curr{
+  color: white;
+}
+.detailscontainerh{
+  display: none;
+}
+.curr{
+  text-align: center;
+  padding-left: 15%;
+  margin-bottom: 10%;
+}
+.hams{
+  color: black;
+  margin: 7.5px;
+}
+.words{
+  padding-top: 5%;
+}
+.words>h2{
+  text-align: center;
+  margin-top: 5%;
+}
+.factos{
+  margin-left: 3%;
+  margin-right: 1%;
+  margin-top: 5%;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 25px;
+}
+.factno{
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.ffacts{
+  font-size: 1.5rem;
+font-family: sans-serif;
+  margin-left: 0%;
+  margin-bottom: 5%;
+}
+
+
+
+
+@media screen and (min-width:320px) and (max-width:379px){
+html{
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+ 
+}
+.ham{
+margin: 7.5px;
+}
+.navcont{
+  display: none;
+}
+.homeintro{
+  top: 15%;
+}
+
+.explore, .dits{
+  color: white;
+}
+
+.himg, .suimg, .siimg, .mainimage{
+  width: 104vw;
+  height: 100vh;
+}
+.explore{
+  font-size: 2rem;
+  position: relative;
+  right: 5%;
+}
+.dits{
+  width: 80%;
+padding-left: 5%;
+margin-top: 2rem;
+}
+.disccover{
+  position: relative;
+  left: 28%;
+ margin-top: 10%;
+}
+.disc{
+  background-color: grey;
+  color: white;
+  
+}
+.back{
+  color: red;
+  position: absolute;
+  top: 0%;
+  margin-top: 5%;
+  left: 7.5%;
+}
+.mobilenavcont{
+  display: block;
+  color: white;
+  position: absolute;
+  z-index: 500;
+  top: 0%;
+}
+
+.form{
+  overflow-x: hidden;
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100vh;
+ 
+
+  z-index: 500;
+  padding-bottom: 10%;
+  display: block;
+
+}
+.form>h2{
+  margin-top: 15%;
+  color: rgb(238, 194, 194);
+  padding-left: 20%;
+  margin-bottom: 10%;
+}
+.form>input{
+  width: 70%;
+  padding: 10px;
+  border: grey 0.5px solid;
+  font-size: 1.4rem;
+  left: 10%;
+  right: 5%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.signupp{
+  left: 36%;
+}
+.suimg{
+  display: none;
+}
+
+.signinform{
+  position: absolute;
+  top: 5%;
+  left: 4%;
+  width: 100vw;
+  height: 100vh; 
+  background-image: linear-gradient(black, rgb(124, 122, 122), rgb(39, 39, 39));
+  z-index: 500;
+}
+.signinform>h2{
+  margin-top: 10%;
+  font-size:1.8rem;
+  color:white;
+  margin-bottom: 10%;
+}
+.signinform>input{
+  position: relative;
+  left: 7.5%;
+}
+.siemail, .sipassword{
+  width: 75%;
+  padding: 12x;
+  border: 1px grey solid;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  
+}
+.siimg{
+  filter: brightness(40%);
+}
+.sign{
+  position: relative;
+  left: 7.5%;
+  margin-bottom: 5%;
+}
+.signin{
+  width: 83%;
+  padding: 8px;
+  font-size: 1.2rem;
+  background-color: red;
+  text-align: center;
+  color: white;
+}
+.lil{
+  display: flex;
+  color: black;
+  position: relative;
+  left: 10%;
+  font-size: 1.1rem;
+}
+.lil1{
+  color: black;
+  position: relative;
+  left: 10%;
+  margin-top: 15px;
+  font-size: 1rem;
+  width: 80%;
+
+}
+.forgot{
+  display: none;
+  margin-left: 13%;
+  margin-top: 1rem;
+}
+.part2{
+  display: none;
+}
+.part1{
+  width: 100vw;
+}
+.curr{
+  padding-left: 5%;
+}
+.sinput{
+  width: 50%;
+  margin-left: 15%;
+  font-size: 1.3rem;
+}
+.submit{
+  padding: 6px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+.location{
+  font-size: 2rem;
+  text-align: center;
+  line-height: 0px;
+}
+.currhicon{
+  position: relative;
+  left: 42.5%;
+}
+
+.condit{
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.sublocation{
+  text-align: center;
+  color: red; 
+}
+.search{
+  left: 0%;
+}
+.cond{
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+.tnd{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.icon{
+  font-size: 2rem;
+  position: relative;
+  left: 40vw;
+}
+.detailscontainer{
+   width: 100vw;
+   color: white;
+   background-color: rgb(65, 64, 64);
+ height: auto;
+ position: relative;
+ top: 24vh;
+   margin-top: 5vh;
+
+}
+.dc2{
+  margin-top: 0%;
+  padding-bottom: 9%;
+ }
+ .tval{
+  display: block;
+ }
+ .val{
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: 700;
+ }
+ .cel{
+  font-size: smaller;
+ }
+ .fullloc{
+  display: block;
+  text-align: center;
+ }
+ .time{
+  margin-bottom: 0%;
+ }
+ .country{
+  font-size: 1.5rem;
+  color: red;
+  font-weight: 500;
+  margin-top: 7.5%;
+  margin-left: 2px;
+ }
+ .temp{
+  display: block;
+ }
+.detailscontainerh{
+  width: 100vw;
+  background-color: rgb(76, 76, 76);
+  height: auto;
+  position: relative;
+  top: 14vh;
+}
+.dc1, .dc2, .dc3, .dc4{
+  display: flex;
+  padding-left: 0%;
+}
+.temp, .humidity, .uv{
+  color: white;
+  background-color:  black;
+  margin-left: 1rem;
+  width: 40vw;
+  height: 10vh;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.wind, .cloud, .winddir{
+  color: white;
+  font-weight: 700;
+  background-color: black;
+  margin-left: 1rem;
+  width: 40vw;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  height: 10vh;
+}
+.h{
+  color: white;
+  font-weight: 700;
+  background-color: black;
+  margin-left: 1rem;
+  width: 25vw;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 2px, 2px, 3px grey;
+  font-size: 1.5rem;
+  height: auto;
+}
+.detailscontainerh{
+  display: block;
+}
+.detailscontainerd{
+  width: 100vw;
+  background-color: rgb(83, 82, 82);
+  height: auto;
+  position: relative;
+ bottom: 50%;
+  display: block;
+  z-index: 500;
+}
+
+.dc5, .dc6{
+  
+}
+.detailscontainerd>h2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.d{
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.d>p{
+ padding-left: 15vw;
+}
+.detailscontainers{
+  width: 100vw;
+  background-color: rgb(61, 61, 61);
+  height: auto;
+  position: relative;
+  color: white;
+  font-weight: 600;
+  bottom: -18vh;
+  display: block;
+  z-index: 500;
+  padding-bottom: 5%;
+ 
+}
+
+.detailscontainers>h2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.d{
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  color:white;
+}
+
+
+.day1, .day2, .day3, .day4, .day5, .day6, .day7{
+  display: flex;
+}
+.part2{
+  display: none;
+}
+.first{
+  display: block;
+}
+.dicon{
+  width: 20%;
+
+
+}
+
+}
+
+
+
+
+@media screen and (min-width:380px) and (max-width:600px){
+  
+  body, html{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .ham{
+  margin: 7.5px;
+  }
+  .navcont{
+    display: none;
+  }
+  .homeintro{
+    top: 15%;
+  }
+  
+  .explore, .dits{
+    color: white;
+  }
+  
+  .himg, .suimg, .siimg, .mainimage{
+    width: 104vw;
+    height: 100vh;
+  }
+  .explore{
+    font-size: 2rem;
+    position: relative;
+    right: 5%;
+  }
+  .dits{
+    width: 80%;
+  padding-left: 5%;
+  margin-top: 2rem;
+  }
+  .search{
+    left: 10%;
+  }
+  .disccover{
+    position: relative;
+    left: 28%;
+   margin-top: 10%;
+  }
+  .disc{
+    background-color: grey;
+    color: white;
+  }
+  .mobilenavcont{
+    display: block;
+    color: white;
+    position: absolute;
+    z-index: 500;
+    top: 0%;
+  }
+  .back{
+    color: red;
+    position: absolute;
+    top: 0%;
+    margin-top: 5%;
+    left: 7.5%;
+  }
+  
+  .form{
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+    padding-bottom: 10%;
+    display: block;
+    overflow: hidden;
+  
+  }
+  .form>h2{
+    margin-top: 15%;
+    color: rgb(238, 194, 194);
+    padding-left: 20%;
+    margin-bottom: 10%;
+  }
+  
+  
+  .form>input{
+    width: 70%;
+    padding: 10px;
+    border: grey 0.5px solid;
+    font-size: 1.4rem;
+    left: 10%;
+    right: 5%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .signupp{
+    left: 36%;
+  }
+  .suimg{
+    display: none;
+  }
+  
+  .signinform{
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    width: 100%;
+    height: 100vh;
+    /* padding-bottom: 30%; */
+ background-image: linear-gradient(black, rgb(124, 122, 122), rgb(39, 39, 39));
+    z-index: 500;
+  }
+  .signinform>h2{
+    margin-top: 10%;
+    font-size:1.8rem;
+    color:white;
+    margin-bottom: 10%;
+  }
+  .signinform>input{
+    position: relative;
+    left: 7.5%;
+  }
+  .siemail, .sipassword{
+    width: 75%;
+    padding: 12x;
+    border: 1px grey solid;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    
+  }
+  .siimg{
+    filter: brightness(40%);
+  }
+  .sign{
+    position: relative;
+    left: 7.5%;
+    margin-bottom: 5%;
+  }
+  .signin{
+    width: 83%;
+    padding: 8px;
+    font-size: 1.2rem;
+    background-color: red;
+    text-align: center;
+    color: white;
+  }
+  .lil{
+    display: flex;
+    color: black;
+    position: relative;
+    left: 10%;
+    font-size: 1.1rem;
+  }
+  .lil1{
+    color: black;
+    position: relative;
+    left: 10%;
+    margin-top: 15px;
+    font-size: 1rem;
+    width: 80%;
+  
+  }
+  .forgot{
+    display: none;
+    margin-left: 13%;
+    margin-top: 1rem;
+  }
+  .part2{
+    display: none;
+  }
+  .part1{
+    width: 100vw;
+  }
+  .curr{
+    padding-left: 0%;
+  }
+  .sinput{
+    width: 50%;
+    margin-left: 7%;
+    font-size: 1rem;
+  }
+  .submit{
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+  }
+  .location{
+    font-size: 1.9rem;
+    line-height: 0px;
+    text-align: center;
+  }
+  .sublocation{
+    font-size: 1.4rem;
+    text-align: center;
+    color: red;
+  }
+  .cond{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+  .tnd{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .icon{
+    font-size: 2rem;
+  }
+  .detailscontainer{
+     width: 100vw;
+     background-color: rgb(55, 54, 54);
+     height: auto;
+     margin-top: 85%;
+  }
+  .dc1, .dc2{
+    padding-left: 0%;
+  }
+  .detailscontainerh{
+    width: 100vw;
+    background-color: rgb(61, 59, 59);
+    height: auto;
+    position: relative;
+    top: 14vh;
+    display: block;
+  }
+  .detailscontainers{
+    width: 100vw;
+    background-color: rgb(61, 61, 61);
+    height: auto;
+    position: relative;
+    color: white;
+    font-weight: 600;
+    bottom: -18vh;
+    display: block;
+    z-index: 500;
+    padding-bottom: 5%;
+   
+  }
+  
+  .detailscontainers>h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .d{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color:white;
+  }
+  .d>p{
+   padding-left: 15vw;
+  }
+  sup{
+    font-size: smaller;
+  }
+  
+  
+  .day1, .day2, .day3, .day4, .day5, .day6, .day7{
+    display: flex;
+  }
+  .part2{
+    display: none;
+  }
+  .first{
+    display: block;
+  }
+  .part2>h2{
+    display: none;
+  }
+  .detailscontainer{
+    display: block;
+  }
+  .part2c{
+    display: none;
+  }
+  .dc3, .dc4{
+    display: flex;
+  }
+  .temp, .humidity, .uv{
+    color: white;
+    background-color:  black;
+    margin-left: 1rem;
+    width: 40vw;
+    height: 12.5vh;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 7px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .wind, .cloud, .winddir{
+    color: white;
+    font-weight: 700;
+    background-color: black;
+    margin-left: 1rem;
+    width: 40vw;
+    text-align: center;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    height: 12.5vh;
+  }
+  .h{
+    color: white;
+    font-weight: 700;
+    background-color: black;
+    margin-left: 1rem;
+    width: 25vw;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    box-shadow: 2px, 2px, 3px grey;
+    font-size: 1.5rem;
+    height: auto;
+  }
+  .tnd{
+    color: white;
+  }
+  .currhicon{
+    margin-left: 43%;
+  }
+  .o{
+    font-size: x-small;
+  }
+  .condit{
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+   text-align: center;
+  }
+  
+  .detailscontainerh{
+    display: block;
+  }
+  .detailscontainer{
+    width: 100vw;
+    color: white;
+    background-color:rgb(71, 70, 70);
+  height: auto;
+  position: relative;
+  top: 28vh;
+    margin-top: 5vh;
+ 
+ }
+ .dc2{
+   margin-top: 0%;
+   padding-bottom: 9%;
+  }
+  .tval{
+   display: block;
+  }
+  .val{
+   color: whitesmoke;
+   font-size: 2rem;
+   font-weight: 700;
+  }
+  .cel{
+   font-size: smaller;
+  }
+  .loc{
+   display: block;
+   padding-left: 25%;
+  }
+  .country{
+   font-size: 1.5rem;
+   color: red;
+   font-weight: 500;
+   margin-top: 7.5%;
+   margin-left: 2px;
+  }
+  
+  
+}
+@media screen and(min-width:600px) {
+
+}
+@media screen and(min-width:900px){
+
+}
+@media screen and(min-width:1200px){
+
+}
+
