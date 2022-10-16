@@ -74,7 +74,7 @@ font-size: 1rem;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .explore{
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: white;
   margin-bottom: 2%;
@@ -149,6 +149,9 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   border-radius: 5px;
   position: relative;
   left: 20%;
+}
+.form>input:active{
+  border: 2px green solid;
 }
 .suimg{
   position: relative;
@@ -262,6 +265,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-left: 20%;
   color: white;
 }
+
 .dc2{
  margin-top: 20%;
 }
@@ -345,7 +349,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 .curr{
   text-align: center;
   padding-left: 15%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .hams{
   color: black;
@@ -430,7 +434,7 @@ margin-top: 2rem;
 }
 .disccover{
   position: relative;
-  /* left: 28%; */
+  left: -5%;
  margin-top: 10%;
 }
 .disc{
@@ -473,6 +477,9 @@ margin-top: 2rem;
   padding-left: 20%;
   margin-bottom: 10%;
 }
+.form>input:active{
+  border: 2px green solid;
+}
 .form>input{
   width: 70%;
   padding: 10px;
@@ -491,15 +498,15 @@ margin-top: 2rem;
 
 .signinform{
   position: absolute;
-  top: 5%;
-  left: 4%;
+  top: 0%;
+  left: 0%;
   width: 100vw;
   height: 100vh; 
   background-image: linear-gradient(black, rgb(124, 122, 122), rgb(39, 39, 39));
   z-index: 500;
 }
 .signinform>h2{
-  margin-top: 10%;
+  margin-top: 20%;
   font-size:1.8rem;
   color:white;
   margin-bottom: 10%;
@@ -507,6 +514,18 @@ margin-top: 2rem;
 .signinform>input{
   position: relative;
   left: 7.5%;
+}
+.lil{
+  width: 80%;
+}
+.if{
+  color: rgb(246, 244, 244);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.bold{
+  color: rgb(31, 47, 215);
+  font-size: 1.2rem;
 }
 .siemail, .sipassword{
   width: 75%;
@@ -525,7 +544,7 @@ margin-top: 2rem;
   margin-bottom: 5%;
 }
 .signin{
-  width: 83%;
+  width: 80%;
   padding: 8px;
   font-size: 1.2rem;
   background-color: red;
@@ -561,11 +580,18 @@ margin-top: 2rem;
 }
 .curr{
   padding-left: 5%;
+  line-height: -10px;
 }
+
 .sinput{
   width: 50%;
   margin-left: 15%;
   font-size: 1.3rem;
+}
+.if{
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 .submit{
   padding: 6px;
@@ -573,7 +599,8 @@ margin-top: 2rem;
   margin-top: 0px;
 }
 .location{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   line-height: 0px;
 }
@@ -589,7 +616,8 @@ margin-top: 2rem;
 }
 .sublocation{
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
   color: red; 
 }
 .search{
@@ -602,7 +630,9 @@ margin-top: 2rem;
 }
 .tnd{
   text-align: center;
-  font-size: 1.5rem;
+  line-height: 0px;
+  font-family: sans-serif;
+  font-size: 1.2rem;
 }
 .icon{
   font-size: 2rem;
@@ -628,7 +658,8 @@ margin-top: 2rem;
  }
  .val{
   color: whitesmoke;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
   font-weight: 500;
  }
  .cel{
@@ -690,7 +721,7 @@ margin-top: 2rem;
 }
 .h{
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   background-color: black;
   margin-left: 1rem;
   width: 25vw;
@@ -700,7 +731,7 @@ margin-top: 2rem;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   box-shadow: 2px, 2px, 3px grey;
-  font-size: 1.25rem;
+  font-size: 1rem;
   height: auto;
 }
 .detailscontainerh{
@@ -725,7 +756,7 @@ margin-top: 2rem;
   text-align: center;
 }
 .d{
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 .d>p{
@@ -751,7 +782,8 @@ margin-top: 2rem;
   text-align: center;
 }
 .d{
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-family: sans-serif;
   margin-bottom: 2rem;
   color:white;
 }
@@ -767,9 +799,19 @@ margin-top: 2rem;
   display: block;
 }
 .dicon{
-  width: 20%;
-
-
+  width: 10%;
+}
+.dicon{
+  height: 15%;
+  margin-left: 5%;
+}
+.dayof{
+  margin-left: 0.5rem;
+  padding-top: 5%;
+}
+.hicon{
+  width: 40%;
+  height: auto;
 }
 
 }
@@ -802,30 +844,30 @@ margin-top: 2rem;
     width: 104vw;
     height: 100vh;
   }
-  .mainimage{
-
-  }
+ 
   .explore{
-    font-size: 2rem;
+    font-size: 2.2rem;
     position: relative;
     right: 5%;
   }
   .dits{
     width: 80%;
   padding-left: 5%;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   }
   .search{
     left: 17%;
   }
   .disccover{
     position: relative;
-    left: 28%;
-   margin-top: 10%;
+    left: -5%;
+    padding: 10px;
+   margin-top: 0%;
   }
   .disc{
-    background-color: grey;
+    background-color: rgb(93, 90, 90);
     color: white;
+    padding: 10px;
   }
   .mobilenavcont{
     display: block;
@@ -862,10 +904,11 @@ margin-top: 2rem;
   }
   
   
+  
   .form>input{
     width: 70%;
     padding: 10px;
-    border: grey 0.5px solid;
+    border: rgb(19, 19, 19) 0.5px solid;
     font-size: 1.4rem;
     left: 10%;
     right: 5%;
@@ -876,6 +919,18 @@ margin-top: 2rem;
   }
   .suimg{
     display: none;
+  }
+  .lil{
+    width: 80%;
+  }
+  .if{
+    color: rgb(246, 244, 244);
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .bold{
+    color: rgb(32, 24, 250);
+    font-size: 1.2rem;
   }
   
   .signinform{
@@ -963,12 +1018,14 @@ margin-top: 2rem;
     margin-top: 0px;
   }
   .location{
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     line-height: 0px;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
   }
   .sublocation{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: red;
   }
@@ -1026,8 +1083,10 @@ margin-top: 2rem;
     text-align: center;
   }
   .d{
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
+    font-weight: 300;
+    font-family: sans-serif;
     color:white;
   }
   .d>p{
@@ -1055,6 +1114,9 @@ margin-top: 2rem;
   }
   .part2c{
     display: none;
+  }
+  .curr{
+    margin-top: 1rem;
   }
   .dc3, .dc4{
     display: flex;
@@ -1087,7 +1149,7 @@ margin-top: 2rem;
   }
   .h{
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     background-color: black;
     margin-left: 1rem;
     width: 25vw;
@@ -1097,11 +1159,13 @@ margin-top: 2rem;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
     box-shadow: 2px, 2px, 3px grey;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     height: auto;
   }
   .tnd{
     color: white;
+    font-size: 1.2rem;
+    font-family: sans-serif;
   }
   .currhicon{
     margin-left: 43%;
@@ -1111,8 +1175,9 @@ margin-top: 2rem;
   }
   .condit{
     color: white;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 1.2rem;
    text-align: center;
   }
   
@@ -1138,7 +1203,7 @@ margin-top: 2rem;
   }
   .val{
    color: whitesmoke;
-   font-size: 2rem;
+   font-size: 1.3rem;
    font-weight: 700;
   }
   .cel{
@@ -1155,7 +1220,18 @@ margin-top: 2rem;
    margin-top: 7.5%;
    margin-left: 2px;
   }
-  
+  .dicon{
+    height: 10%;
+    margin-left: 5%;
+  }
+  .dayof{
+    margin-left: 0.5rem;
+    padding-top: 5%;
+  }
+  .hicon{
+    width: 40%;
+    height: auto;
+  }
   
 }
 @media screen and(min-width:600px) {

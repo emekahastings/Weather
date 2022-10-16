@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { auth } from './firebaseconfig'
  
 
@@ -45,14 +45,15 @@ const signin= async()=>{
                 
            
             <div className='lil'>
-                <p className='rem'><input type={'checkbox'} /> Remember me </p>
-                <p className='forgot'>Forgot Password</p>
+           <p className='if'> If you dont have an account please  <b className='bold' onClick={()=>navigate('/signup')}>Sign up</b> </p> 
+                {/* <p className='rem'><input type={'checkbox'} /> Remember me </p>
+                <p className='forgot'>Forgot Password</p> */}
             </div>
-            <p className='lil1'> Kindly keep your password a secret to avoud being compromised 
+            {/* <p className='lil1'> Kindly keep your password a secret to avoud being compromised 
                 if you have any suggestions, ideas please <a href='/'> Contact us </a>
                 Have a lovely time enjoying your new super power <br />
                 If you dont have an account please <Link to='/signup'  >Signup</Link>
-            </p>
+            </p> */}
         </div>
        </div>
         </div>

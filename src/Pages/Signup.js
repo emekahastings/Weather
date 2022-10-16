@@ -25,11 +25,10 @@ const Signup=()=>{
       <div className='form'>
       <FontAwesomeIcon icon={faArrowLeft}  className='back' onClick={()=>navigate(-1)} />
         <h2>SIGN UP FORM</h2>
-        <input type={'text'} placeholder='Full name...'  /> <br />
+        <input type={'text'} placeholder='Full name...' className='what' /> <br />
         <input type={'email'} placeholder='Email address' onChange={(event)=>{setremail(event.target.value)}} /> <br />
         <input type={'password'} placeholder='Password'  onChange={(event)=>{setrpassword(event.target.value)}} /> <br />
         <input type={'text'} placeholder='Location' /> <br />
-        <input type={'text'} placeholder='Personal or Commercial use' /> <br />
         <div className='signupp'>
          <Link to='/'>  <button className='signup' onClick={signup}>SIGN UP</button> </Link> 
            </div>

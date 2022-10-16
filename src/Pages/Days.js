@@ -100,11 +100,11 @@ let navigate= useNavigate()
                 <div>
                     <div className='fullloc'>
                     <h1 className='location'>{current.name} </h1> 
-                    <p className='sublocation'> {current.country} </p> <br />
+                    <p className='sublocation'> {current.country} </p> 
                     </div>
                 <p className='tnd'>{current.localtime}</p>
+                <p className='condit'>{condition.text} </p>
                 <img src={condition.icon} className='currhicon' alt='lol' />
-                <p className='cond'>{condition.text} </p>
                 </div>
                 
 
@@ -114,46 +114,45 @@ let navigate= useNavigate()
 
 <div className='detailscontainers'>
 
-<h2>7day Forecast</h2>
    <div className='first'>
      <div className='day1 d'>
-        <b>Mon </b>
+        <b className='dayof'>Mon </b>
        <img src={d1b.icon} alt='lol' className='dicon' />
        <p className='t1'>{d1a.avgtemp_c} <sup>o</sup>C</p>
         <p className='tx1'>{d1b.text}</p>
      </div>
      <div className='day2 d'>
-        <b>Tues </b>
+        <b className='dayof'>Tues </b>
         <img src={d2b.icon} alt='lol' className='dicon' />
        <p className='t1'>{d2a.avgtemp_c} <sup>o</sup>C</p>
         <p className='tx1'>{d2b.text}</p>
      </div>
      <div className='day3 d'>
-        <b>Wed </b>
+        <b className='dayof'>Wed </b>
         <img src={d3b.icon} alt='lol' className='dicon' />
        <p className='t1'>{d3a.avgtemp_c} <sup>o</sup>C</p>
         <p className='tx1'>{d3b.text}</p>
      </div>
      <div className='day4 d'>
-        <b>Thu </b>
+        <b className='dayof'>Thu </b>
         <img src={d4b.icon} alt='lol' className='dicon' />
        <p className='t1'>{d4a.temp_c} <sup>o</sup>C</p>
         <p className='tx1'>{d4b.text}</p>
      </div>
      <div className='day5 d'>
-        <b>Frid </b>
+        <b className='dayof' >Fri </b>
         <img src={d5b.icon} alt='lol' className='dicon' />
        <p className='t1'>{d5a.temp_c} <sup>o</sup>C</p>
         <p className='tx1'>{d5b.text}</p>
      </div>
      <div className='day6 d'>
-        <b>Satu </b>
+        <b className='dayof'>Sat </b>
         <img src={d6b.icon} alt='lol' className='dicon' />
        <p className='t1'>{d6a.temp_c} <sup>o</sup>C</p>
         <p className='tx1'>{d6b.text}</p>
      </div>
      <div className='day7 d'>
-        <b>Sund </b>
+        <b className='dayof'>Sun </b>
         <img src={d7b.icon} alt='lol' className='dicon' />
        <p className='t1'>{d7a.temp_c} <sup>o</sup>C</p>
         <p className='tx1'>{d7b.text}</p>

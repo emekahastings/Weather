@@ -71,7 +71,7 @@ const Mainpage=()=>{
                     <div className='mainoc'>
                 <p className='tnd'>{current.localtime}</p>
                 <img src={condition.icon} className='currhicon' alt='lol' />
-                <p className='cond'>{condition.text} </p>
+                <p className='condit'>{condition.text} </p>
                 </div>
                 </div>
                 </div>

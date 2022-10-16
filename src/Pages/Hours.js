@@ -130,18 +130,15 @@ axios.get('https://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71
             <div className='parts'>
             <div className='part1' >
             <h2 className='curr'>12 hour Weather</h2> 
-                <div className='searc'>
+                <div className='a'>
                     <input type={'text'} className='scinput' placeholder='Search City...'  onChange={Better}/>
-                   
-                </div>
-                <h1 className='location'>{zeroa.name}</h1> <h4 className='sublocation'>{zeroa.country}</h4> <br />
-                <div>
+                <h1 className='location'>{zeroa.name}</h1> <h4 className='sublocation'>{zeroa.country} </h4>
                 <p className='tnd'>{zeroc.time}</p>          
                 </div>
-                <div className='group'>
-              <img src={zerob.icon} alt='lol' className='currhicon' />
+                <div className='b'>
               <p className='condit'>{zerob.text} </p>
               <h1 className='tnd'>{zeroc.temp_c}<sup className='o'>o</sup>C</h1>  
+              <img src={zerob.icon} alt='lol' className='currhicon' />
               </div>
 
                 <div className='detailscontainerh'>
