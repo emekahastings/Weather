@@ -37,7 +37,7 @@ const Hours=()=>{
     let navigate= useNavigate()
 
   useEffect(()=>{
-axios.get('http://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71051212601&q=Lagos&days=1&aqi=no&alerts=no')
+axios.get('https://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71051212601&q=Lagos&days=1&aqi=no&alerts=no')
 .then(response=>{
   setzeroa(response.data.location)
   setzerob(response.data.forecast.forecastday[0].hour[0].condition)
@@ -74,7 +74,7 @@ axios.get('http://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe710
 
   function Better(event){
     let searchparam= event.target.value
-    axios.get(`http://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71051212601&q=${searchparam}&days=10&aqi=no&alerts=no`)
+    axios.get(`https://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71051212601&q=${searchparam}&days=10&aqi=no&alerts=no`)
     .then(response=>{
 
       setzeroa(response.data.location)
@@ -114,7 +114,7 @@ axios.get('http://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe710
     
 
     return(
-        <div className=''>
+        <div className='app'>
             <img  src={mainimage} alt='lol'className='mainimage'/>
             <div className='mobilenavcont'>
         <FontAwesomeIcon icon={faBarsStaggered}  className='ham'  onClick={()=>setshow(!show)}/>
@@ -129,10 +129,10 @@ axios.get('http://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe710
     </div>
             <div className='parts'>
             <div className='part1' >
-            <h2 className='curr'>Current Weather</h2> 
-                <div className='search'>
-                    <input type={'text'} className='sinput' placeholder='Search City...'  onChange={Better}/>
-                    <p className='submit'>Submit</p>
+            <h2 className='curr'>12 hour Weather</h2> 
+                <div className='searc'>
+                    <input type={'text'} className='scinput' placeholder='Search City...'  onChange={Better}/>
+                   
                 </div>
                 <h1 className='location'>{zeroa.name}</h1> <h4 className='sublocation'>{zeroa.country}</h4> <br />
                 <div>

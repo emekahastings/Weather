@@ -28,7 +28,7 @@ const Days=()=>{
 
 
     useEffect(()=>{
-    axios.get('http://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71051212601&q=Lagos&days=9&aqi=no&alerts=no')
+    axios.get('https://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71051212601&q=Lagos&days=9&aqi=no&alerts=no')
     .then(response=>{
       setcurrent(response.data.location)
       setcondition(response.data.current.condition)
@@ -53,7 +53,7 @@ const Days=()=>{
 
     function Good(event){
       let searchparam= event.target.value
-      axios.get(`http://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71051212601&q=${searchparam}&days=7&aqi=no&alerts=no`)
+      axios.get(`https://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71051212601&q=${searchparam}&days=7&aqi=no&alerts=no`)
        .then(response=>{
          setcurrent(response.data.location)
          setcondition(response.data.current.condition)
@@ -77,7 +77,7 @@ const Days=()=>{
         }
 let navigate= useNavigate()
     return(
-        <div className=''>
+        <div className='app'>
             <img  src={mainimage} alt='lol'className='mainimage'/>
             <div className='mobilenavcont'>
         <FontAwesomeIcon icon={faBarsStaggered}  className='ham'  onClick={()=>setshow(!show)}/>
@@ -93,9 +93,9 @@ let navigate= useNavigate()
            
             <div className='part1' >
             <h2 className='curr'>7 day Forecast</h2> 
-                <div className='search'>
-                    <input type={'text'} className='sinput' placeholder='Search City...' onChange={Good} />
-                    <p className='submit'>Submit</p>
+                <div className='searc'>
+                    <input type={'text'} className='scinput' placeholder='Search City...' onChange={Good} />
+                  
                 </div>
                 <div>
                     <div className='fullloc'>

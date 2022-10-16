@@ -17,8 +17,7 @@ let navigate= useNavigate()
             <p onClick={()=>navigate('/')}>Home</p>
             <p onClick={()=>navigate('./signup')}>Signup</p>
             <p onClick={()=>navigate('./signin')}>Signin</p>
-            <p>Facts</p>
-            <p>Contactus</p>
+          
          </div>
 
         </div>

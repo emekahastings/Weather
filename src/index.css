@@ -1,20 +1,30 @@
-*, .suimg{
+/* *, .suimg, .mainimage{
  margin: 0;
  padding: 0;
  border: 0;
+
  outline: 0;
  vertical-align: baseline;
+} */
+html, body{
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  
 }
 
+
 .himg, .suimg, .siimg, .mainimage{
-  width:104vw;
+  width:100vw;
   height:106vh;
   z-index:300;
   position: relative;
   filter: opacity(0.7);
   filter: brightness(70%);
  padding: 0%;
- right: 2%;
+
 
 }
 .back{
@@ -90,7 +100,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .disccover{
   position: relative;
-  left: 43%;
+  margin-left: 30vw;
 }
 .signupp{
   position: relative;
@@ -111,7 +121,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: black;
   padding: 5px;
   margin-top: 2%;
-  width: fit-content;
+  width:fit-content;
   cursor: pointer;
 }
 .form{
@@ -210,6 +220,12 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  position: relative;
  left: 10%;
  margin-bottom: 7.5%;
+}
+.scinput{
+  padding: 5px;
+  margin-left: 25%;
+  margin-top: 0;
+  font-size: 1rem;
 }
 .sinput{
   width: 100%;
@@ -322,7 +338,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .curr{
   color: white;
-}
+} 
 .detailscontainerh{
   display: none;
 }
@@ -365,16 +381,18 @@ font-family: sans-serif;
 
 
 
-@media screen and (min-width:320px) and (max-width:379px){
-html{
+@media screen and (min-width:320px) and (max-width:379px) {
+html, body{
+  width: 100vw;
+  height: auto;
   overflow-x: hidden;
-}
-body{
-  overflow-x: hidden;
- 
+  margin: 0;
+  padding: 0;
+
 }
 .ham{
-margin: 7.5px;
+margin: 5.5px;
+height: 25px;
 }
 .navcont{
   display: none;
@@ -391,6 +409,15 @@ margin: 7.5px;
   width: 104vw;
   height: 100vh;
 }
+.mainimage{
+  width: 120vw;
+  overflow-x: hidden;
+  object-fit: cover;
+  margin-right: 0%;
+}
+.scinput{
+  margin-left: 23%;
+}
 .explore{
   font-size: 2rem;
   position: relative;
@@ -403,7 +430,7 @@ margin-top: 2rem;
 }
 .disccover{
   position: relative;
-  left: 28%;
+  /* left: 28%; */
  margin-top: 10%;
 }
 .disc{
@@ -552,7 +579,7 @@ margin-top: 2rem;
 }
 .currhicon{
   position: relative;
-  left: 42.5%;
+  left: 44.5%;
 }
 
 .condit{
@@ -562,10 +589,11 @@ margin-top: 2rem;
 }
 .sublocation{
   text-align: center;
+  font-size: 1.3rem;
   color: red; 
 }
 .search{
-  left: 0%;
+  left: 10%;
 }
 .cond{
   font-size: 1.5rem;
@@ -587,21 +615,21 @@ margin-top: 2rem;
    background-color: rgb(65, 64, 64);
  height: auto;
  position: relative;
- top: 24vh;
+ top: 12vh;
    margin-top: 5vh;
 
 }
 .dc2{
   margin-top: 0%;
-  padding-bottom: 9%;
+  padding-bottom: 5%;
  }
  .tval{
   display: block;
  }
  .val{
   color: whitesmoke;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 500;
  }
  .cel{
   font-size: smaller;
@@ -640,24 +668,24 @@ margin-top: 2rem;
   margin-left: 1rem;
   width: 40vw;
   height: 10vh;
-  font-weight: 700;
-  border-radius: 5px;
+  font-weight: 600;
+  border-radius: 0px;
   padding: 5px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
 }
 .wind, .cloud, .winddir{
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   background-color: black;
   margin-left: 1rem;
   width: 40vw;
   text-align: center;
   padding: 5px;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   height: 10vh;
 }
 .h{
@@ -672,7 +700,7 @@ margin-top: 2rem;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   box-shadow: 2px, 2px, 3px grey;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   height: auto;
 }
 .detailscontainerh{
@@ -723,7 +751,7 @@ margin-top: 2rem;
   text-align: center;
 }
 .d{
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   margin-bottom: 2rem;
   color:white;
 }
@@ -756,7 +784,8 @@ margin-top: 2rem;
     overflow-x: hidden;
   }
   .ham{
-  margin: 7.5px;
+  margin: 5.5px;
+  height: 25px;
   }
   .navcont{
     display: none;
@@ -773,6 +802,9 @@ margin-top: 2rem;
     width: 104vw;
     height: 100vh;
   }
+  .mainimage{
+
+  }
   .explore{
     font-size: 2rem;
     position: relative;
@@ -784,7 +816,7 @@ margin-top: 2rem;
   margin-top: 2rem;
   }
   .search{
-    left: 10%;
+    left: 17%;
   }
   .disccover{
     position: relative;
@@ -848,11 +880,11 @@ margin-top: 2rem;
   
   .signinform{
     position: absolute;
-    top: 5%;
-    left: 4%;
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 100vh;
-    /* padding-bottom: 30%; */
+    overflow-x: hidden;
  background-image: linear-gradient(black, rgb(124, 122, 122), rgb(39, 39, 39));
     z-index: 500;
   }
@@ -880,10 +912,10 @@ margin-top: 2rem;
   .sign{
     position: relative;
     left: 7.5%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
   .signin{
-    width: 83%;
+    width: 80%;
     padding: 8px;
     font-size: 1.2rem;
     background-color: red;
@@ -898,11 +930,11 @@ margin-top: 2rem;
     font-size: 1.1rem;
   }
   .lil1{
-    color: black;
+    color: rgb(8, 8, 8);
     position: relative;
     left: 10%;
-    margin-top: 15px;
-    font-size: 1rem;
+    margin-top: 0px;
+    font-size: 1.2rem;
     width: 80%;
   
   }
@@ -945,9 +977,14 @@ margin-top: 2rem;
     text-align: center;
     color: white;
   }
+  .mainoc{
+    position:relative;
+    top: 50%;
+  }
   .tnd{
     text-align: center;
     font-size: 1.5rem;
+   line-height: 10px;
   }
   .icon{
     font-size: 2rem;
@@ -1088,7 +1125,7 @@ margin-top: 2rem;
     background-color:rgb(71, 70, 70);
   height: auto;
   position: relative;
-  top: 28vh;
+  top: 18vh;
     margin-top: 5vh;
  
  }

@@ -24,6 +24,7 @@ function App() {
     <Route index element={<Signin />} />
       <Route path='mainpage' element={<Mainpage />} />
       <Route path='mainpage/hours' element={<Hours />} />
+      <Route path='mainpage/hours/days' element={<Days />} />
       <Route path='mainpage/hours/facts' element={<Facts />} />
     <Route path='days' element={<Days />} />
 

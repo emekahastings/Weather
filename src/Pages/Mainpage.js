@@ -17,7 +17,7 @@ const Mainpage=()=>{
  
 
     useEffect(()=>{
-        axios.get('http://api.weatherapi.com/v1/current.json?key=a527df41ad06453fbfe71051212601&q=Lagos&aqi=no')
+        axios.get('https://api.weatherapi.com/v1/current.json?key=a527df41ad06453fbfe71051212601&q=Lagos&aqi=no')
         .then(response =>{
           setcurrent(response.data.location)
           setcondition(response.data.current.condition)
@@ -30,7 +30,7 @@ const Mainpage=()=>{
         let searchparam= event.target.value
 
          console.log(searchparam)
-            axios.get(`http://api.weatherapi.com/v1/current.json?key=a527df41ad06453fbfe71051212601&q=${searchparam}&aqi=no`)
+            axios.get(`https://api.weatherapi.com/v1/current.json?key=a527df41ad06453fbfe71051212601&q=${searchparam}&aqi=no`)
             .then(response =>{
               setcurrent(response.data.location)
               setcondition(response.data.current.condition)
@@ -41,8 +41,8 @@ const Mainpage=()=>{
         
        
     return(
-        <div className=''>
-            <img  src={mainimage} alt='lol'className='mainimage'/>
+        <div className='app'>
+            <img  src={mainimage} alt='lol'className='himg'/>
             <div className='mobilenavcont'>
         <FontAwesomeIcon icon={faBarsStaggered}  className='ham'  onClick={()=>setshow(!show)}/>
          {
@@ -57,20 +57,22 @@ const Mainpage=()=>{
             <div className='parts'>
             <div className='part1'>
                 <h2 className='curr'>Current Forecast</h2> 
-                <div className='search'>
-                    <input type={'text'} className='sinput' placeholder='Search City...' onChange={Good}   />
-                    <p className='submit'  >Submit</p>
+                <div className='searc'>
+                    <input type={'text'} className='scinput' placeholder='Search City...' onChange={Good}   />
+                   
                 </div>
   
             <div>
                 <div>
                     <div className='fullloc'>
                     <h1 className='location'>{current.name} </h1> 
-                    <p className='sublocation'> {current.country} </p> <br />
+                    <p className='sublocation'> {current.country} </p> 
                     </div>
+                    <div className='mainoc'>
                 <p className='tnd'>{current.localtime}</p>
                 <img src={condition.icon} className='currhicon' alt='lol' />
                 <p className='cond'>{condition.text} </p>
+                </div>
                 </div>
                 </div>
                
@@ -93,7 +95,7 @@ const Mainpage=()=>{
                  <div className='dc2'>
                  <div className='wind'>
                     <b>Wind deg</b> <br /> 
-                    <b className='val'> {details.wind_degree}</b>
+                    <b className='val'> {details.wind_degree} <sup className='cel'>o</sup></b>
                  </div>
                  <div className='winddir'>
                     <b>Wind dir</b> <br />
