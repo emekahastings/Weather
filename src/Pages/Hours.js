@@ -120,10 +120,10 @@ axios.get('https://api.weatherapi.com/v1/forecast.json?key=a527df41ad06453fbfe71
         <FontAwesomeIcon icon={faBarsStaggered}  className='ham'  onClick={()=>setshow(!show)}/>
          {
            show? <div className='sidemenu'>
-            <p onClick={()=>navigate('./mainpage')}>Home</p>
-            <p onClick={()=>navigate('./hours')}>Hourly Forecast</p>
-            <p onClick={()=>navigate('./days')}>7days Forecast</p>
-            <p onClick={()=>navigate('./facts')}>Weather facts</p>
+            <p onClick={()=>navigate('/mainpage')}>Home</p>
+            <p onClick={()=>navigate('/hours')}>Hourly Forecast</p>
+            <p onClick={()=>navigate('/days')}>7days Forecast</p>
+            <p onClick={()=>navigate('/facts')}>Weather facts</p>
          </div>:null
 }
     </div>

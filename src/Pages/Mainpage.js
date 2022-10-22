@@ -45,6 +45,7 @@ const Mainpage=()=>{
             <img  src={mainimage} alt='lol'className='himg'/>
             <div className='mobilenavcont'>
         <FontAwesomeIcon icon={faBarsStaggered}  className='ham'  onClick={()=>setshow(!show)}/>
+       
          {
            show? <div className='sidemenu'>
             <p onClick={()=>navigate('./mainpage')}>Home</p>
@@ -105,6 +106,7 @@ const Mainpage=()=>{
                 </div>
                 
             </div>
+            
             <div className='part2'>
 
                 <h2>7day Forecast</h2>

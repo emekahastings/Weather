@@ -25,13 +25,13 @@ const Facts=()=>{
         <p className="factos" >The weather stil remains a mystery to many, the facts and ideologies surrounding with are endless. <br/> 
           However we have 35 facts that would blow your mind away
           <div> <br /> <br />
-            <ol>
-           <li> <h3 className="factno"> Fact 1</h3> 
+            
+            <h3 className="factno"> Fact 1</h3> 
            <p className="ffacts"> 
             Weather affects the migration patterns of both humans and animals. For example, the greatest wild beast migration occurs in July and September. Zebras, gazelles and other wild beasts migrate looking for fresh grazing
 
            </p>
-           </li>
+           
            <li> <h3 className="factno"> Fact 2</h3>
            <p className="ffacts"> 
       Lightening has about 6 million strikes everyday. Shocking right? The perfect place to see lightening stikes is the Lake Maracaibo in Venezuela, where there is an 80% chance of experiencing nocturnal thunderstorm
@@ -89,7 +89,7 @@ const Facts=()=>{
       
            </p>
             </li>
-            </ol>
+            
            
           </div>
          </p>

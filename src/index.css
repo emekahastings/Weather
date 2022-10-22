@@ -115,6 +115,20 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding: 7px;
   cursor: pointer;
 }
+.uerror{
+  color: red;
+  line-height: 0px;
+  padding-left: 8%;
+}
+.error{
+  text-align: center;
+  color: red;
+  font-size: 1.5rem;
+}
+.suberror{
+text-align: center;
+font-size: 1.2rem;
+}
 .disc{
   font-size: 1rem;
   color: white;
@@ -364,22 +378,23 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .factos{
   margin-left: 3%;
-  margin-right: 1%;
+ 
   margin-top: 5%;
-  font-family: sans-serif;
-  font-size: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
   font-weight: 100;
   line-height: 25px;
+  list-style:none;
 }
 .factno{
   text-align: center;
   margin-bottom: 0.5rem;
 }
 .ffacts{
-  font-size: 1.5rem;
-font-family: sans-serif;
+  font-size: 1.2rem;
+font-family: times;
   margin-left: 0%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 
@@ -931,6 +946,10 @@ margin-top: 2rem;
   .bold{
     color: rgb(32, 24, 250);
     font-size: 1.2rem;
+  }
+  .uerror{
+    color: red;
+    line-height: 0px;
   }
   
   .signinform{

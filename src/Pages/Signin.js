@@ -12,21 +12,51 @@ const Signin=()=>{
 let navigate= useNavigate()
 const [lemail, setlemail]= useState()
 const [lpassword, setlpassword]= useState()
-
+const [eerror, seteerror ]= useState({})
+const [perror, setperror ]= useState({})
  
-const signin= async()=>{
+function shine(event){
+    setlemail(event.target.value)
+     console.log(event.target.value)
+    }
+    let verify = async()=>{
+        try{
+          if(lemail==='' || lpassword===''){
+          seteerror({
+            message:'Email/Password cannot be empty'
+          })
+        }  
+        if(lpassword.length < 6 && lpassword.length > 1){
+          setperror({
+            message: 'Password cannot be less than 6 digits', 
+          })
+          }
+          console.log('Enter')
+        }
+        catch(error){
+         
+        seteerror({
+          message: 'No field should be empty', 
+        })
+        
+      }
+
    
+   }
+const signin= async()=>{
+    
     try{
         let response= await signInWithEmailAndPassword(auth, lemail, lpassword)
         navigate('./mainpage')
         console.log(response)
-      
+       
+
        }
     catch(error){
-    console.log(error)
-    alert('noshow')
+       verify()
     }
 }
+
     return(
         <div className=''>
        <div className='s'>
@@ -35,9 +65,10 @@ const signin= async()=>{
             
             <FontAwesomeIcon icon={faArrowLeft}  className='back' onClick={()=>navigate(-1)} />
                 <h2>SIGN IN</h2>
-                <input type={'email'} placeholder='Enter Email Address'className='siemail'  onChange={(event)=>{setlemail(event.target.value)} } /> <br />
-                                                                                           
-                <input type={'password'} placeholder='Enter Password' className='sipassword'  onChange={(event)=>{setlpassword(event.target.value)}} /> <br /> 
+                                <p className='uerror'>{eerror.message}</p>
+                <input type={'email'} placeholder='Enter Email Address'className='siemail' value={lemail || ""}  onChange={shine} /> <br />
+                                 <p className='uerror'> {perror.message} </p>                                             
+                <input type={'password'} placeholder='Enter Password' className='sipassword' value={lpassword || ""}  onChange={(event)=>{setlpassword(event.target.value)}} /> <br /> 
 
                 <div className='sign' >
                    <button className='signin' onClick={signin}>SignIn</button>
@@ -58,6 +89,6 @@ const signin= async()=>{
        </div>
         </div>
     )
+        }
 
-}
 export default Signin
